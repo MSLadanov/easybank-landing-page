@@ -2,3 +2,38 @@
     font-family: Public Sans;
     src: url('/fonts/PublicSans-VariableFont_wght.ttf');
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+    height: 60px;
+}
+
+.navbar > :first-child{
+    display: flex;
+    align-items: center;
+}
+
+.navbar > :last-child{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_menu{
+    display: flex;
+}
+
+.navbar_menu a {
+    display: flex;
+    padding: 20px 8px 0px 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: 'Public Sans';
+    text-decoration: none;
+    color:hsl(233, 8%, 62%);
+}
+.navbar_menu a:hover{
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+}
