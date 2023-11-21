@@ -33,7 +33,29 @@
     font-family: 'Public Sans';
     text-decoration: none;
     color:hsl(233, 8%, 62%);
+    border-bottom: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-image-source: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    transition: ease-in 0.15s;
 }
-.navbar_menu a:hover{
-    border-bottom: 3px solid hsl(136, 65%, 51%);
+
+.navbar_menu a:hover {
+    border-bottom: 5px solid;
+    border-width: 5px;
+}
+
+.request{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Public Sans';
+    font-weight: bold;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), 48%, hsl(192, 70%, 51%) 70%);
+    padding: 10px 20px;
+    transition: ease-in 0.15s;
+}
+.request:hover {
+    opacity: 0.7;
 }
