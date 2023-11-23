@@ -7,6 +7,10 @@ body{
     margin: 0px;
 }
 
+.content{
+    position: relative;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -72,7 +76,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    height: 465px;
+    height: 550px;
     overflow: hidden;
 }
 .greet{
@@ -82,7 +86,7 @@ body{
     width: 400px;
     margin-left: 130px;
 }
-.greet h1{
+.greet h1, h2, h3{
     font-family: 'Public Sans';
     color: hsl(233, 26%, 24%);
     font-weight: 300;
@@ -93,11 +97,11 @@ body{
     font-family: 'Public Sans';
     font-weight: 400;
 }
-.mockups{
+.background{
     overflow: hidden;
 }
 
-.mockups_image{
+.background_image{
     background-image: url(/images/bg-intro-desktop.svg);
     background-size: 809px 687px;
     background-repeat: no-repeat;
@@ -105,4 +109,44 @@ body{
     width: 627px;
     position: relative;
     bottom: 170px;
+}
+.background_mockups{
+    background-image: url(/images/image-mockups.png);
+    background-size: 555px 670px;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 627px;
+    position: relative;
+    top: 79px;
+    left: 165px;
+}
+
+.benefits{
+    position: relative;
+    background-color: hsl(220, 16%, 96%);
+    bottom: 84px;
+    z-index: -1;
+    padding: 60px;
+}
+
+.benefits .greet{
+    margin-left: 70px;
+    margin-bottom: 60px;
+}
+
+.benefits-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.benefits_card{
+    width: 260px;
+    text-align: left;
+    margin: 0px 10px;
+}
+
+.benefits_card p {
+    color: hsl(233, 8%, 62%);
+    font-family: 'Public Sans';
+    font-weight: 400;
 }
