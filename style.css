@@ -74,17 +74,20 @@ body{
 }
 .intro{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 60px;
     height: 550px;
     overflow: hidden;
+}
+.intro .section-wrapper{
+    display: flex;
+    padding: 0px;   
 }
 .greet{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
-    margin-left: 130px;
+    width: 570px;
 }
 .greet h1, h2, h3{
     font-family: 'Public Sans';
@@ -99,6 +102,8 @@ body{
 }
 .background{
     overflow: hidden;
+    position: relative;
+    left: 250px;
 }
 
 .background_image{
@@ -106,7 +111,7 @@ body{
     background-size: 809px 687px;
     background-repeat: no-repeat;
     height: 640px;
-    width: 627px;
+    width: 1050px;
     position: relative;
     bottom: 170px;
 }
@@ -122,21 +127,25 @@ body{
 }
 
 .benefits{
+    display: flex;
+    justify-content: center;
     position: relative;
     background-color: hsl(220, 16%, 96%);
     bottom: 84px;
     z-index: -1;
+}
+
+.section-wrapper{
+    width: 1120px;
     padding: 60px;
 }
 
 .benefits .greet{
-    margin-left: 70px;
     margin-bottom: 60px;
 }
 
 .benefits-cards{
     display: flex;
-    justify-content: center;
 }
 
 .benefits_card{
@@ -152,8 +161,8 @@ body{
 }
 
 .articles{
-    padding-top: 70px;
-    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
     background-color: hsl(0, 0%, 98%);
     position: relative;
     bottom: 85px;
@@ -161,7 +170,7 @@ body{
 
 .articles-cards{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .article_card h5 {
@@ -171,10 +180,10 @@ body{
 }
 
 .article_card{
+    cursor: pointer;
     background-color: hsl(0, 0%, 100%);
     width: 260px;
     text-align: left;
-    margin: 0px 10px;
 }
 
 .article_card img{
