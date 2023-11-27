@@ -212,3 +212,17 @@ body{
     height: 180px;
     overflow: hidden;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.logo_links{
+    display: flex;
+}
+
+.pages{
+    display: flex;
+}
