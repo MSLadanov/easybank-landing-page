@@ -72,6 +72,19 @@ body{
 .request:hover {
     opacity: 0.7;
 }
+
+.navbar_mobile{
+    display: none;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    top: 0;
+    padding: 0 15px;
+    width: 100%;
+}
+
 .intro{
     display: flex;
     justify-content: center;
@@ -292,3 +305,44 @@ body{
     height: 100px;
     color:hsl(233, 8%, 62%);
 }
+
+.burger-button{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.burger{
+    height: 5px;
+    background-color: gray;
+    width: 50px;
+    margin: 6px 0px;
+  }
+
+  .hiding{
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .rotate-up{
+    transform: translateY(17px) rotate(45deg);
+    transition: 0.5s;
+  }
+  .rotate-down{
+    transform: translateY(-17px) rotate(-45deg);
+    transition: 0.5s;
+  }
+
+@media screen and (max-width: 980px) {
+    .navbar{
+        display: none;
+    }
+    .navbar_mobile{
+        display: flex;
+    }
+    .navbar_logo{
+        display: flex;
+        align-items: center;
+    }
+  }
