@@ -9,6 +9,7 @@ body{
 
 .content{
     position: relative;
+    overflow: hidden;
 }
 
 .navbar{
@@ -116,21 +117,21 @@ body{
 .background{
     overflow: hidden;
     position: relative;
-    left: 250px;
+    /* left: 250px; */
 }
 
 .background_image{
     background-image: url(/images/bg-intro-desktop.svg);
-    background-size: 809px 687px;
+    background-size: 746px 618px;
     background-repeat: no-repeat;
     height: 640px;
-    width: 1050px;
+    width: 1144px;
     position: relative;
-    bottom: 170px;
+    bottom: 150px;
 }
 .background_mockups{
     background-image: url(/images/image-mockups.png);
-    background-size: 555px 670px;
+    background-size: 499px 603px;
     background-repeat: no-repeat;
     height: 640px;
     width: 627px;
@@ -149,7 +150,7 @@ body{
 }
 
 .section-wrapper{
-    width: 1120px;
+    width: 1025px;
     padding: 60px;
 }
 
@@ -195,7 +196,7 @@ body{
 .article_card{
     cursor: pointer;
     background-color: hsl(0, 0%, 100%);
-    width: 260px;
+    width: 245px;
     text-align: left;
 }
 
@@ -204,15 +205,15 @@ body{
 }
 
 .article_card h3{
-    margin: 20px 30px;
+    margin: 10px 20px;
 }
 
 .article_card h5{
-    margin: 20px 30px;
+    margin: 10px 20px;
 }
 
 .article_card p{
-    margin: 20px 30px;
+    margin: 10px 20px;
 }
 
 .article_card p {
@@ -334,7 +335,17 @@ body{
     transition: 0.5s;
   }
 
-@media screen and (max-width: 980px) {
+@media (max-width:320px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (max-width:481px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+@media (max-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+@media (max-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
     .navbar{
         display: none;
     }
@@ -345,4 +356,26 @@ body{
         display: flex;
         align-items: center;
     }
-  }
+ }
+@media (max-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .background{
+        left: 150px;
+    }
+    .background_image{
+        background-size: 671px 556px;
+        bottom: 47px;
+    }
+    .background_mockups{
+        background-size: 449px 542px;
+    }
+}
+@media (max-width:1281px) { 
+    .intro{
+        justify-content: space-evenly
+    }
+    .intro .section-wrapper{
+        justify-content: space-between;
+    }
+    /* hi-res laptops and desktops */ 
+}
