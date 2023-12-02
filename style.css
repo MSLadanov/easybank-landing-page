@@ -310,7 +310,7 @@ body{
 .burger-button{
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: 100px;
     justify-content: center;
     align-items: center;
   }
@@ -335,48 +335,17 @@ body{
     transition: 0.5s;
   }
 
-@media (max-width:320px)  { 
-    /* smartphones, iPhone, portrait 480x320 phones */
+
+@media (max-width:1281px) { 
+    .intro{
+        justify-content: space-evenly
+    }
+    .intro .section-wrapper{
+        justify-content: space-between;
+    }
+    /* hi-res laptops and desktops */ 
 }
-@media (max-width:481px)  { 
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-}
-@media (max-width:641px)  { 
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-    .navbar{
-        display: none;
-    }
-    .navbar_mobile{
-        display: flex;
-    }
-    .navbar_logo{
-        display: flex;
-        align-items: center;
-    }
-}
-@media (max-width:961px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .section-wrapper{
-        width: 641px !important;
-    }
-    .navbar > :first-child{
-        margin-left: 0px;
-    }
-    
-    .navbar > :last-child{
-        margin-right: 0px;
-    }
-    .article_card{
-        width: 150px !important;
-    }
-    .article_card img{
-        width: 150px !important;
-    }
-    .article_card .image-wrap{
-        height: 100px !important;
-        overflow: hidden;
-    }
- }
+
 @media (max-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */ 
     .background{
@@ -402,13 +371,163 @@ body{
         height: 132px;
         overflow: hidden;
     }
+    .footer{
+        padding: 20px 40px;
+    }
 }
-@media (max-width:1281px) { 
-    .intro{
-        justify-content: space-evenly
+
+@media (max-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .section-wrapper{
+        width: 641px;
+    }
+    .navbar > :first-child{
+        margin-left: 0px;
+    }
+    
+    .navbar > :last-child{
+        margin-right: 0px;
+    }
+    .article_card{
+        width: 150px;
+    }
+    .article_card img{
+        width: 150px;
+    }
+    .article_card .image-wrap{
+        height: 100px;
+        overflow: hidden;
+    }
+    .article_card h3{
+        font-size: 15px;
+    }
+    
+    .article_card h5{
+        font-size: 10px;
+    }
+    
+    .article_card p{
+        font-size: 12px;
+    }
+    .footer{
+        padding: 5px 15px;
+    }
+ }
+
+ @media (max-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .navbar{
+        display: none;
+    }
+    .navbar_mobile{
+        display: flex;
+    }
+    .navbar_logo{
+        display: flex;
+        align-items: center;
     }
     .intro .section-wrapper{
-        justify-content: space-between;
+        flex-direction: column-reverse;
     }
-    /* hi-res laptops and desktops */ 
+    .background{
+        overflow: visible;
+        top: 275px;
+        left: 0px;
+    }
+    .background_image{
+        background-size: 805px 556px;
+        bottom: 236px;
+    }
+    .background_mockups{
+        left: 100px;
+    }
+    .greet{
+        width: 100%;
+        align-items: center;
+    }
+    .greet h1{
+        width: 355px;
+    }
+    .greet p{
+        width: 355px;
+        text-align: center;
+    }
+    .benefits{
+        margin-top: 130px;
+    }
+    .intro{
+        height: 575px;
+    }
+    .benefits-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits_card{
+        text-align: center;
+        width: 350px;
+    }
+    .articles-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article_card{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .article_card img{
+        width: 350px;
+    }
+    .article_card .image-wrap{
+        height: 180px;
+        overflow: hidden;
+    }
+    .article_card h3{
+        font-size: 20px;
+    }
+    
+    .article_card h5{
+        font-size: 15px;
+    }
+    
+    .article_card p{
+        font-size: 18px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .logo_links{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .logo_media{
+        align-items: center;
+    }
+    .logo_media div {
+        margin: 20px 0px;
+    }
+    .pages{
+        flex-direction: column;
+    }
+    .pages_column{
+        align-items: center;
+    }
+    .pages_column a{
+        margin: 20px 0px;
+    }
+    .copyright{
+        align-items: center;
+    }
+    .copyright div {
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width:481px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (max-width:320px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */
 }
