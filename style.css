@@ -10,6 +10,7 @@ body{
 .content{
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .navbar{
@@ -86,10 +87,18 @@ body{
     width: 100%;
 }
 
+.shadow_box{
+    position: relative;
+    background-color: none;
+}
+
+.active{
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .intro{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     height: 550px;
     overflow: hidden;
 }
