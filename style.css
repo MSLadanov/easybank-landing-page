@@ -89,11 +89,12 @@ body{
 
 .shadow_box{
     position: relative;
-    background-color: none;
+    background-color: rgb(0, 0,0,0);
 }
 
 .active{
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(0,0,0,0.6769301470588236) 0%, rgba(255,255,255,0) 15%);
+    transition: 1s;
 }
 
 .intro{
@@ -322,6 +323,7 @@ body{
     width: 100px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
 .burger{
