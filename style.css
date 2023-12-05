@@ -346,6 +346,32 @@ body{
     transition: 0.5s;
   }
 
+  .mobile_menu{
+    position: sticky;
+    top: 75px;
+    background: transparent;
+    z-index: 1;
+    margin: 20px 35px;
+  }
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .menu a{
+    display: flex;
+    justify-content: center;
+    color:hsl(233, 26%, 24%);
+    font-family: 'Public Sans';
+    text-decoration: none;
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+
 
 @media (max-width:1281px) { 
     .intro{
