@@ -1,6 +1,6 @@
 @font-face {
     font-family: Public Sans;
-    src: url('/fonts/PublicSans-VariableFont_wght.ttf');
+    src: url('./fonts/PublicSans-VariableFont_wght.ttf');
 }
 
 body{
@@ -135,7 +135,7 @@ body{
 }
 
 .background_image{
-    background-image: url(/images/bg-intro-desktop.svg);
+    background-image: url(./images/bg-intro-desktop.svg);
     background-size: 746px 618px;
     background-repeat: no-repeat;
     height: 640px;
@@ -144,7 +144,7 @@ body{
     bottom: 150px;
 }
 .background_mockups{
-    background-image: url(/images/image-mockups.png);
+    background-image: url(./images/image-mockups.png);
     background-size: 499px 603px;
     background-repeat: no-repeat;
     height: 640px;
@@ -278,19 +278,19 @@ body{
 }
 
 .facebook{
-    background-image: url('/images/icon-facebook.svg');
+    background-image: url('./images/icon-facebook.svg');
 }
 .youtube{
-    background-image: url('/images/icon-youtube.svg');
+    background-image: url('./images/icon-youtube.svg');
 }
 .twitter{
-    background-image: url('/images/icon-twitter.svg');
+    background-image: url('./images/icon-twitter.svg');
 }
 .pinterest{
-    background-image: url('/images/icon-pinterest.svg');
+    background-image: url('./images/icon-pinterest.svg');
 }
 .instagram{
-    background-image: url('/images/icon-instagram.svg');
+    background-image: url('./images/icon-instagram.svg');
 }
 
 
