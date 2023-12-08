@@ -98,7 +98,7 @@ body{
 }
 
 .active-menu{
-    display: block !important;
+    /* display: block !important; */
 }
 
 .intro{
@@ -335,6 +335,7 @@ body{
     background-color: gray;
     width: 50px;
     margin: 6px 0px;
+    transition: 0.5s
   }
 
   .hiding{
@@ -351,14 +352,20 @@ body{
   }
 
   .mobile_menu{
-    display: none;
+    display: block;
     position: sticky;
     top: 75px;
     background: transparent;
     z-index: 1;
     margin: 0px 35px;
   }
-
+.active-menu .menu{
+    height: 300px;
+    top: 0px;
+}
+.active-menu .menu a{
+    color:hsl(233, 26%, 24%);
+}
 .menu{
     position: absolute;
     display: flex;
@@ -366,15 +373,20 @@ body{
     background-color: white;
     width: 100%;
     border-radius: 12px;
+    height: 0px;
+    top: -75px;
+    transition: 0.5s;
+    overflow: hidden;
   }
   .menu a{
     display: flex;
     justify-content: center;
-    color:hsl(233, 26%, 24%);
+    color: transparent;
     font-family: 'Public Sans';
     text-decoration: none;
     margin: 20px 0px;
     font-size: 18px;
+    transition: 0.6s;
   }
 
 
