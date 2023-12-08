@@ -97,10 +97,6 @@ body{
     transition: 1s;
 }
 
-.active-menu{
-    /* display: block !important; */
-}
-
 .intro{
     display: flex;
     justify-content: center;
@@ -131,7 +127,6 @@ body{
 .background{
     overflow: hidden;
     position: relative;
-    /* left: 250px; */
 }
 
 .background_image{
